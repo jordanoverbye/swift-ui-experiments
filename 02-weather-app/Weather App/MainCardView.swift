@@ -13,24 +13,17 @@ struct MainCardView: View {
        
        var body: some View{
            ZStack {
-
-               
                VStack(spacing: 20){
                    Text("\(weather.currentTemp)°")
-//                       .foregroundColor(Color.white)
                        .fontWeight(Font.Weight.heavy)
                        .font(Font.system(size: 70))
                    
                    Image(systemName: weather.weatherIcon)
                    .resizable()
-//                   .foregroundColor(Color.white)
                    .frame(width: 100, height: 100)
                    .aspectRatio(contentMode: .fit)
-                       
-                       
-                   
+            
                    Text("\(weather.maxTemp)°")
-//                       .foregroundColor(Color.white)
                        .font(.title)
                        .padding(.vertical)
                }

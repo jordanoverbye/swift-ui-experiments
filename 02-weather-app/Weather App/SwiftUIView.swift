@@ -15,7 +15,7 @@ struct SmallCard: View {
            
            VStack(spacing: 20) {
                // Day text
-               Text(self.weather.day).fontWeight(.bold)
+            Text(self.weather.day).fontWeight(.bold).foregroundColor(color: "Secondary")
 
                
                // Weather icon
@@ -42,7 +42,7 @@ struct SmallCard: View {
                }
            }
            .frame(width: 200, height: 300)
-           .background(Color(self.weather.color))
+           .background(Color("Primary"))
            .cornerRadius(30)
            .shadow(color: Color(weather.color).opacity(0.7), radius: 10, x: 0, y: 8)
        }

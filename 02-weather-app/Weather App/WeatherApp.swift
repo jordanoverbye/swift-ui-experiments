@@ -31,8 +31,7 @@ struct WeatherApp: View {
                     MainCardView(weather: $weather)
                         .cornerRadius(CGFloat(20))
                         .padding()
-                        .shadow(color: Color(self.weather.color)
-                            .opacity(0.4), radius: 20, x: 0, y: 20)
+                        .shadow(color: Color("Primary").opacity(0.6), radius: 10, x: 0, y: 10)
                     
                     Text("Next 7 Days")
                         .foregroundColor(Color("text"))
